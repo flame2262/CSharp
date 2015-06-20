@@ -10,6 +10,14 @@ namespace ConsoleApplicationTest
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("hello");
+
+	        for (int i = 0; i <= 10000; i++)
+	        {
+		        var car = new Car(i);
+	        }
+
+            Console.WriteLine("done");
         }
     }
 }

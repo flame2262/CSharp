@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace ConsoleApplicationTest
@@ -15,6 +16,23 @@ namespace ConsoleApplicationTest
         {
 	        ProductionYear = ProductionYear;
         }
-    
+
+        public void CleanCar()
+        {
+            //Thread.Sleep(30);
+            _isCarClean = true;
+
+        }
+
+        public bool IsCarClean()
+        {
+            return _isCarClean;
+        }
+
+
+        private bool _isCarClean = false;
+
+        private string _name;
+
     }
 }
